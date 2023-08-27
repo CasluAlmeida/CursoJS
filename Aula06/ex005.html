@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var n1 = Number(window.prompt('Digite um valor: '))
+        var valorDolarHoje = Number(window.prompt('Digite o valor do dolar hoje: '))
+        var s = n1 * valorDolarHoje
+        var sValor = s.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        document.write(`O valor ${n1} em real é <strong>${sValor}</strong>`)
+    </script>
+
+</body>
+</html>
